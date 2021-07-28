@@ -14,7 +14,7 @@ function About() {
                     <p className="lead">About Me text</p>
                     <div className="d-grid gap-2 d-md-flex justify-content-md-start">
                         <a href="mailto: patricklago21@gmail.com" type="button" className="btn btn-primary btn-lg px-4 me-md-2">Reach Out</a>
-                        <a href="https://github.com/patricklago21" type="button" className="btn btn-outline-secondary btn-lg px-4">GitHub</a>
+                        <a href="https://github.com/patricklago21" target="_blank" rel="noopener noreferrer" type="button" className="btn btn-outline-secondary btn-lg px-4">GitHub</a>
                     </div>
                 </div>
             </div>
