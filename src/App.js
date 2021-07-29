@@ -19,13 +19,14 @@ function App() {
       ></Nav>
 
       <main>
-        <About></About>
         {!contactSelected ? (
+            <>
+            <About></About>
             <Projects></Projects>
+            </>
         ) : (
           <Resume></Resume>  
         )}
-        
       </main>
 
       <Footer></Footer>
