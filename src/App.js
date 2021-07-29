@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+// import React from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -8,14 +9,23 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 
 function App() {
+  const [contactSelected, setContactSelected] = useState(false);
+
   return (
     <div>
-      <Nav></Nav>
+      <Nav
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
+      ></Nav>
 
       <main>
         <About></About>
-        <Projects></Projects>
-        <Resume></Resume>
+        {!contactSelected ? (
+            <Projects></Projects>
+        ) : (
+          <Resume></Resume>  
+        )}
+        
       </main>
 
       <Footer></Footer>

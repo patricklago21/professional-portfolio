@@ -14,7 +14,7 @@ function Resume() {
             </div>
             <div className="overflow-hidden">
                 <div className="container px-5">
-                    <img src={resume} className="img-fluid border rounded-3 shadow-lg mb-4" alt="Resume image"
+                    <img src={resume} className="img-fluid border rounded-3 shadow-lg" alt="Resume image"
                         width="700" height="500" loading="lazy" />
                 </div>
             </div>

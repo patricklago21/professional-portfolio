@@ -1,7 +1,13 @@
 import React from 'react';
 import { FileCodeFill } from 'react-bootstrap-icons';
 
-function Nav() {
+// function Nav() {
+function Nav(props) {
+    const {
+        contactSelected,
+        setContactSelected
+    } = props;
+
     return (
         <div className="container">
             <header className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
@@ -11,8 +17,10 @@ function Nav() {
                 </a>
 
                 <ul className="nav nav-pills">
-                    <li className="nav-item"><a href="#" className="nav-link">Projects</a></li>
-                    <li className="nav-item"><a href="#" className="nav-link">Resume</a></li>
+                    {/* <li className={`nav-item ${projectSelected && 'navActive'}`}><span onClick={() => {setProjectSelected(true); setResumeSelected(false);}}>Projects</span></li> */}
+                    {/* <li className={`nav-item ${resumeSelected && 'navActive'}`}><span onClick={() => {setProjectSelected(false); setResumeSelected(true);}}>Resume</span></li> */}
+                    <li className="nav-item"><a data-testid='projects' href="#projects" className="nav-link" onClick={() => setContactSelected(false)}>Projects</a></li>
+                    <li className={`nav-item ${contactSelected}`}><a data-testid='reach-out' href="#reach-out" className="nav-link" onClick={() => setContactSelected(true)}>Reach Out</a></li>
                 </ul>
             </header>
         </div>
