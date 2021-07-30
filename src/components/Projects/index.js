@@ -1,7 +1,8 @@
 import React from 'react';
 import project1 from "../../assets/images/project1.png";
 import hausKeepr from "../../assets/images/hauskeepr.png";
-import budgetTracker from "../../assets/images/budget-tracker.png";
+// import budgetTracker from "../../assets/images/budget-tracker.png";
+import webkitPic from "../../assets/images/webkit.png";
 
 function Projects() {
     return (
@@ -26,7 +27,7 @@ function Projects() {
             <div className="container my-5">
                 <div className="row pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border">
                     <div className="col-lg-4 p-0 overflow-hidden shadow-lg">
-                        <img src={budgetTracker} className="rounded-lg-3" alt="" width="720"/>
+                        <img src={webkitPic} className="rounded-lg-3" alt="" width="320"/>
                     </div>
                     
                     <div className="col-lg-7 offset-lg-1 p-3 p-lg-5 pt-lg-3">

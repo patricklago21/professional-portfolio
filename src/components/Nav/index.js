@@ -20,7 +20,7 @@ function Nav(props) {
                     {/* <li className={`nav-item ${projectSelected && 'navActive'}`}><span onClick={() => {setProjectSelected(true); setResumeSelected(false);}}>Projects</span></li> */}
                     {/* <li className={`nav-item ${resumeSelected && 'navActive'}`}><span onClick={() => {setProjectSelected(false); setResumeSelected(true);}}>Resume</span></li> */}
                     <li className="nav-item"><a data-testid='projects' href="#projects" className="nav-link" onClick={() => setContactSelected(false)}>Projects</a></li>
-                    <li className={`nav-item ${contactSelected}`}><a data-testid='reach-out' href="#reach-out" className="nav-link" onClick={() => setContactSelected(true)}>Reach Out</a></li>
+                    <li className={`nav-item ${contactSelected}`}><a data-testid='reach-out' href="#reach-out" className="nav-link" onClick={() => setContactSelected(true)}>Credentials</a></li>
                 </ul>
             </header>
         </div>
