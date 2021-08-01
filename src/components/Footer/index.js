@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github } from 'react-bootstrap-icons';
+import { FileCode } from 'react-bootstrap-icons';
 
 function Footer() {
     return (
@@ -10,7 +10,7 @@ function Footer() {
                 </div>
 
                 <ul className="nav nav-pills">
-                    <li className="nav-item"><a href="https://github.com/patricklago21" className="nav-link"><Github className="fa-lg" style={{ color: '#004e89' }}/></a></li>
+                    <li><FileCode className="mx-2" style={{ color: '#004e89' }}/></li>
                 </ul>
             </header>
         </div>
